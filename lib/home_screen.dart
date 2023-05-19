@@ -66,7 +66,8 @@ class MovieCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () async {
-        await Clipboard.setData(const ClipboardData(text: "your text"));
+        await Clipboard.setData(ClipboardData(
+            text: movie.torrents[0].buildMagnetUrl(movie.title, movie.url)));
       },
       child: Container(
         margin: const EdgeInsets.symmetric(horizontal: 2.0, vertical: 2.0),

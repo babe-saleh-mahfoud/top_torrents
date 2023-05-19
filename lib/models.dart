@@ -127,4 +127,19 @@ class Torrent {
       dateUploadedUnix: json['date_uploaded_unix'],
     );
   }
+  String buildMagnetUrl(String movieName, String announceUrl) {
+    final encodedMovieName = Uri.encodeComponent(movieName);
+    final magnetParams = {
+      'xt': 'urn:btih:$hash',
+      'dn': encodedMovieName,
+      'tr': announceUrl,
+    };
+
+    final magnetUrl = Uri(
+      scheme: 'magnet',
+      queryParameters: magnetParams,
+    ).toString();
+
+    return magnetUrl;
+  }
 }
