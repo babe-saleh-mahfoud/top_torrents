@@ -6,7 +6,7 @@ An app that i built in under 20 minutes (that demonstrates how productive Flutte
 
 | Screenshot  |
 | :-------------------------------------:|
-| <img src="screenshots/screenshot.png" width="100" height="100"> |
+| <img src="screenshots/screenshot.png" width="300" height="600"> |
 
 ---
 
