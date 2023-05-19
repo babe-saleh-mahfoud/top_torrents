@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:top_torrents/apis.dart';
-import 'package:top_torrents/main.dart';
 import 'package:top_torrents/models.dart';
+import 'package:top_torrents/movie_details_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key, required this.movies});
