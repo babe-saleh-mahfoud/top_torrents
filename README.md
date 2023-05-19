@@ -1,11 +1,12 @@
 # top_torrents
 
 An app that i built in under 20 minutes (that demonstrates how productive Flutter is, and nothing else) to fetch me 4K movies with rating above 7 from my favourite site yts.mx si that i can easily choose what moviei will be enjoying in the weekend.
+
 ### Preview
 
-| Screenshot 1 | Screenshot 2 | Screenshot 3 |
-| :-------------------------------------: | :-------------------------------------: |  :--------------------------------------: |
-| ![Screenshot 1](screenshots/image1.png) | ![Screenshot 2](screenshots/image2.png) | ![Screenshot 3](screenshots/image3.png) |
+| Screenshot  |
+| :-------------------------------------:|
+| ![Screenshot 1](screenshots/screenshot.png)  |
 
 ---
 
@@ -26,8 +27,6 @@ An app that i built in under 20 minutes (that demonstrates how productive Flutte
 </div>
 
 <br />
-
-
 
 <br />
 
@@ -61,7 +60,6 @@ Here's a brief high-level overview of the tech stack the Nebat app uses:
 Interested in contributing to Nebat project? Thanks so much for your interest! We are always looking for improvements to the project and contributions from open-source developers are greatly appreciated.
 
 If you have a contribution in mind, Feel free to open an issue and then submit your PR, and i will check it out in the nearest time possible.
-
 
 # ⚠️ License
 
