@@ -27,11 +27,6 @@ class _HomeScreenState extends State<HomeScreen> {
           setState(() {
             _movies = _movies;
           });
-          _scrollController.animateTo(
-            0.0,
-            duration: const Duration(milliseconds: 500),
-            curve: Curves.easeOut,
-          );
         }
       }
     });

@@ -8,7 +8,7 @@ Future<List<Movie>> movies(int pages) async {
   try {
     final response = await http.get(
       Uri.parse(
-        'https://yts.mx/api/v2/list_movies.json?minimum_rating=6&quality=2160p&limit=15&page=$pages',
+        'https://yts.mx/api/v2/list_movies.json?limit=50&page=$pages&minimum_rating=7',
       ),
     );
     if (response.statusCode == 200) {
