@@ -1,7 +1,9 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:top_torrents/apis.dart';
+import 'package:top_torrents/main.dart';
 import 'package:top_torrents/models.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -69,11 +71,18 @@ class MovieCard extends StatelessWidget {
         await Clipboard.setData(ClipboardData(
             text: movie.torrents[0].buildMagnetUrl(movie.title, movie.url)));
       },
+      onDoubleTap: () {
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: (context) => MovieDetailsScreen(movie: movie)));
+      },
       child: Container(
         margin: const EdgeInsets.symmetric(horizontal: 2.0, vertical: 2.0),
         child: ListTile(
           tileColor: Colors.blue.withOpacity(0.1),
-          leading: Image.network(movie.largeCoverImage),
+          leading:
+              Image(image: CachedNetworkImageProvider(movie.mediumCoverImage)),
           title: Text(movie.title,
               style: TextStyle(
                   fontSize: 16.0,
