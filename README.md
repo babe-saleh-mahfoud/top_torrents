@@ -1,16 +1,3 @@
 # top_torrents
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+An app that i built in under 20 minutes (that demonstrates how productive Flutter is, and nothing else) to fetch me 4K movies with rating above 7 from my favourite site yts.mx si that i can easily choose what moviei will be enjoying in the weekend.

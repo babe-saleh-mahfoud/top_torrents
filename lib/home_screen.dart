@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:top_torrents/apis.dart';
 import 'package:top_torrents/models.dart';
 
@@ -38,7 +39,13 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
-          title: const Text('Top Torrents'),
+          backgroundColor: Colors.white,
+          title: Text('Top Torrents',
+              style: TextStyle(
+                  fontSize: 20.0,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: GoogleFonts.poppins().fontFamily,
+                  color: Colors.black)),
           centerTitle: true,
         ),
         body: ListView.builder(
@@ -66,9 +73,20 @@ class MovieCard extends StatelessWidget {
         child: ListTile(
           tileColor: Colors.blue.withOpacity(0.1),
           leading: Image.network(movie.largeCoverImage),
-          title: Text(movie.title),
-          subtitle: Text(movie.year.toString()),
-          trailing: Text(movie.rating.toString()),
+          title: Text(movie.title,
+              style: TextStyle(
+                  fontSize: 16.0,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: GoogleFonts.hahmlet().fontFamily)),
+          subtitle: Text(
+            movie.year.toString(),
+          ),
+          trailing: Text(movie.rating.toString(),
+              style: TextStyle(
+                  fontSize: 17.0,
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: GoogleFonts.titilliumWeb().fontFamily)),
         ),
       ),
     );
